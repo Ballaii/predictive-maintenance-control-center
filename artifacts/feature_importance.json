@@ -1,0 +1,30 @@
+{
+  "model": "Random Forest (uncalibrated comparison model)",
+  "impurity": {
+    "numeric__Air temperature [K]": 0.11761473428307756,
+    "numeric__Process temperature [K]": 0.08123794942248924,
+    "numeric__Rotational speed [rpm]": 0.29655918152997535,
+    "numeric__Torque [Nm]": 0.30392474524219787,
+    "numeric__Tool wear [min]": 0.18199588681640794,
+    "category__Type_H": 0.004931095175323189,
+    "category__Type_L": 0.006928884061483953,
+    "category__Type_M": 0.00680752346904493
+  },
+  "permutation_test_ap_decrease": {
+    "Type": 0.06388532330851415,
+    "Air temperature [K]": 0.3497467273303866,
+    "Process temperature [K]": 0.11913219449130422,
+    "Rotational speed [rpm]": 0.42505701301837895,
+    "Torque [Nm]": 0.44771040536740914,
+    "Tool wear [min]": 0.22808111779665322
+  },
+  "permutation_std": {
+    "Type": 0.016873005078560266,
+    "Air temperature [K]": 0.0633597704176747,
+    "Process temperature [K]": 0.024199863478231484,
+    "Rotational speed [rpm]": 0.024525496380768064,
+    "Torque [Nm]": 0.016833845319107178,
+    "Tool wear [min]": 0.016272459432252993
+  },
+  "warning": "Post-freeze descriptive analysis only. Associations do not establish causality."
+}

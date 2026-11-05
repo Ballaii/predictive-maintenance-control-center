@@ -1,0 +1,81 @@
+{
+  "version": "1.1.0",
+  "selected_model": "Calibrated Random Forest",
+  "features": [
+    "Type",
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]"
+  ],
+  "target": "Machine failure",
+  "threshold": 0.8493198346514657,
+  "score_kind": "calibrated probability estimate",
+  "calibration_caveat": "Calibration assessed on this synthetic sample; no external guarantee.",
+  "training_ranges": {
+    "Air temperature [K]": [
+      295.3,
+      304.5
+    ],
+    "Process temperature [K]": [
+      305.7,
+      313.8
+    ],
+    "Rotational speed [rpm]": [
+      1168.0,
+      2861.0
+    ],
+    "Torque [Nm]": [
+      4.6,
+      76.2
+    ],
+    "Tool wear [min]": [
+      0.0,
+      253.0
+    ]
+  },
+  "defaults": {
+    "Air temperature [K]": 300.1,
+    "Process temperature [K]": 310.1,
+    "Rotational speed [rpm]": 1504.0,
+    "Torque [Nm]": 40.0,
+    "Tool wear [min]": 106.0
+  },
+  "seed": 42,
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scikit-learn": "1.4.2",
+    "joblib": "1.4.2",
+    "scipy": "1.12.0"
+  },
+  "dataset_sha256": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e",
+  "risk_categories": "Elevated if estimated probability >= chosen policy threshold; Lower otherwise.",
+  "created_utc": "2026-11-04T16:49:18.124190+00:00",
+  "threshold_method": "maximum recall at validation precision >= 0.90",
+  "default_policy": "high_precision",
+  "policies": {
+    "high_precision": {
+      "threshold": 0.8493198346514657,
+      "method": "maximum recall at validation precision >= 0.90",
+      "precision": 0.9,
+      "recall": 0.2647058823529412,
+      "precision_target_achieved": true,
+      "predicted_positives": 20
+    },
+    "balanced": {
+      "threshold": 0.42169382344542883,
+      "method": "maximum validation F1; no 90% precision constraint",
+      "precision": 0.7454545454545455,
+      "recall": 0.6029411764705882,
+      "f1": 0.6666666666666666
+    }
+  },
+  "probability_column": "failure_probability",
+  "calibration_method": "sigmoid, 3-fold CV wholly within the original training partition",
+  "evidence_scope": "Assignment-alignment extension after original test results were already inspected. Model and both thresholds use saved validation evidence only. Test results reuse the original held-out partition; this is not a new untouched test experiment.",
+  "selection_rule": "Among existing calibrated candidates: lowest validation Brier, then log loss.",
+  "model_sha256": "e25a3c8dac5f3451a0fee8f309275e79b80708041cbd80f45a6f36c6884381dd"
+}

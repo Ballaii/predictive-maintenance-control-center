@@ -1,0 +1,27 @@
+{
+  "platform": "Linux container",
+  "passed": 5,
+  "failed": 0,
+  "checks": [
+    {
+      "page": "app.py",
+      "status": "passed"
+    },
+    {
+      "page": "views/equipment_overview.py",
+      "status": "passed"
+    },
+    {
+      "page": "views/risk_predictor.py",
+      "status": "passed"
+    },
+    {
+      "page": "views/model_analytics.py",
+      "status": "passed"
+    },
+    {
+      "page": "views/cloud_analytics.py",
+      "status": "passed"
+    }
+  ]
+}

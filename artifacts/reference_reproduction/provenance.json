@@ -1,0 +1,6 @@
+{
+  "reference_commit": "ef563b06272bb6ad583e1719fa416174409f359f",
+  "execution": "Original code cells executed unchanged; isolated cwd and official CSV.",
+  "environment": "Project Python 3.11 environment; numerical pins match reference core.",
+  "warning": "Reference test-set threshold selection retained for reproduction only."
+}

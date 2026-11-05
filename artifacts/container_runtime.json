@@ -1,0 +1,19 @@
+{
+  "verified_date": "2026-11-05",
+  "image_tag": "maintenance-control-center:1.1.0",
+  "local_image_id": "sha256:c307ee39eab2db3aba49b8b044f049b7f8cbd480efef0fe23906ce28cee6310b",
+  "image_bytes": 1479016307,
+  "platform": "linux/amd64",
+  "container_name": "maintenance-verify-20261105",
+  "container_id": "ffa542fdc6e110709215956d1e0fd69733161e9c350fa4ef5040335c936b2535",
+  "runtime_user": "appuser",
+  "health": "healthy",
+  "oom_killed": false,
+  "restart_count": 0,
+  "memory_limit_bytes": 1073741824,
+  "cpu_limit_nanocpus": 1000000000,
+  "observed_memory": "333.6MiB / 1GiB",
+  "cgroup_memory_peak_bytes": 757682176,
+  "host_url": "http://127.0.0.1:8081",
+  "runtime_port": 8090
+}

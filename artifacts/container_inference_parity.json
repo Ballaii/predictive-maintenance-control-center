@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "observations": 10000,
+  "model": "Calibrated Random Forest",
+  "model_sha256": "e25a3c8dac5f3451a0fee8f309275e79b80708041cbd80f45a6f36c6884381dd",
+  "host_python": "3.11.16",
+  "container_python": "3.11.18",
+  "host_platform": "Windows",
+  "container_platform": "Linux",
+  "policies": {
+    "high_precision": {
+      "max_absolute_probability_difference": 1.1102230246251565e-16,
+      "classifications_identical": true,
+      "elevated_count": 132
+    },
+    "balanced": {
+      "max_absolute_probability_difference": 1.1102230246251565e-16,
+      "classifications_identical": true,
+      "elevated_count": 315
+    }
+  }
+}

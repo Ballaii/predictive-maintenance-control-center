@@ -1,0 +1,17 @@
+Reference: Edirin-Ako/predictive-maintenance-ai4i
+https://github.com/Edirin-Ako/predictive-maintenance-ai4i
+Commit ef563b06272bb6ad583e1719fa416174409f359f
+Copyright (c) 2025 Edirin-Ako, MIT (see LICENSE.reference).
+
+The original notebook was executed unchanged in an isolated directory for reproduction.
+Its outputs in artifacts/reference_reproduction are explicitly reference experiment outputs.
+The model families and baseline preprocessing approach informed this implementation.
+Application modules, validation-only selection, artifact persistence, dashboard, tests,
+cloud utilities and documentation are project-specific implementation developed with AI assistance.
+
+Dataset: AI4I 2020 Predictive Maintenance Dataset. (2020).
+UCI Machine Learning Repository. https://doi.org/10.24432/C5HS5C
+License: Creative Commons Attribution 4.0 International (CC BY 4.0).
+https://creativecommons.org/licenses/by/4.0/
+The original CSV is retained unmodified. Predictions and split columns are derived additions
+in a separate file. The source synthetic dataset contains 27 label/subtype disagreements.

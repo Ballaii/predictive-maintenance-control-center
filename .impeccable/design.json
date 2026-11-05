@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-04T16:40:00Z",
+  "title": "Design System: Predictive Maintenance Control Center",
+  "extensions": {
+    "colorMeta": {
+      "primary-teal": {"role": "primary", "displayName": "Primary teal"},
+      "analytical-blue": {"role": "secondary", "displayName": "Analytical blue"},
+      "analytical-amber": {"role": "secondary", "displayName": "Analytical amber"},
+      "observed-coral": {"role": "secondary", "displayName": "Observed coral"},
+      "navy-ground": {"role": "neutral", "displayName": "Navy ground"},
+      "charcoal-surface": {"role": "neutral", "displayName": "Charcoal surface"},
+      "primary-text": {"role": "neutral", "displayName": "Primary text"},
+      "secondary-text": {"role": "neutral", "displayName": "Secondary text"},
+      "chart-text": {"role": "neutral", "displayName": "Chart text"},
+      "metric-divider": {"role": "neutral", "displayName": "Metric divider"},
+      "selection-ground": {"role": "neutral", "displayName": "Selection ground"}
+    },
+    "breakpoints": [{"name": "mobile", "value": "640px"}],
+    "shadows": [],
+    "motion": []
+  },
+  "components": [
+    {
+      "name": "Metric strip",
+      "kind": "custom",
+      "refersTo": "metric",
+      "description": "Authored metric treatment; actual label/value layout is supplied by Streamlit.",
+      "html": "<div class=\"ds-metric\"><div>Recorded failures</div><strong>339</strong></div>",
+      "css": ".ds-metric {color:#e7edf5; padding:1rem 0; border-bottom:1px solid #344458; font-family:sans-serif;} .ds-metric strong {font-variant-numeric:tabular-nums;}"
+    },
+    {
+      "name": "Readable caption",
+      "kind": "custom",
+      "refersTo": "caption",
+      "description": "Full-opacity caveat treatment; native typography is framework-owned.",
+      "html": "<p class=\"ds-caption\">Historical synthetic observations. No live sensors or future failure horizon.</p>",
+      "css": ".ds-caption {color:#b3c2d4; opacity:1; font-family:sans-serif;}"
+    },
+    {
+      "name": "Keyboard focus treatment",
+      "kind": "button",
+      "description": "Authored focus treatment on a semantic button; other geometry is framework-owned.",
+      "html": "<button class=\"ds-focus\">Estimate failure risk</button>",
+      "css": ".ds-focus:focus-visible {outline:2px solid #48d3bd; outline-offset:3px;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Industrial analytical workspace",
+    "overview": "The user brief fixes a professional technical interface with navy and charcoal surfaces and restrained teal or blue accents. Mode: Operate. Primary tasks are locating observations, distinguishing recorded labels from model scores, and running inference. Flat analytical content and native Streamlit controls carry the interface.\n\nThis record preserves the existing sidebar, wide workspace, responsive stacking and explicit uncertainty. Values are extracted from .streamlit/config.toml and src/ui.py. No decorative imagery or authored animation appears in the implementation.",
+    "keyCharacteristics": [
+      "Plain page titles and concise task descriptions.",
+      "Measurements with explicit units and labeled states.",
+      "Persistent desktop navigation and collapsible mobile navigation.",
+      "Analytical charts, tables and provenance caveats.",
+      "Readable full-opacity captions."
+    ],
+    "rules": [
+      {"name": "The Readable Caveat Rule", "body": "Captions use their explicit text color at full opacity. The original framework dimming reduced essential caveat contrast and is not part of the system.", "section": "colors"}
+    ],
+    "dos": [
+      "Do preserve the user's navy/charcoal technical direction and restrained accents.",
+      "Do keep measured labels, model scores, partitions and units explicit.",
+      "Do retain readable captions, native keyboard access and narrow-screen stacking.",
+      "Do substantiate analytics with real tables, charts and downloadable data."
+    ],
+    "donts": [
+      "Don't communicate observed failure or risk category through color alone.",
+      "Don't present historical observations as live sensors or unique machines.",
+      "Don't style an uncalibrated score as a guaranteed probability or safety standard.",
+      "Don't invent radius, shadow, motion or typography scales absent from the implementation."
+    ]
+  }
+}

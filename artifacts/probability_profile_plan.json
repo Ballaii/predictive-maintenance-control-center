@@ -1,0 +1,32 @@
+{
+  "selected_model": "Calibrated Random Forest",
+  "selection_rule": "Among existing calibrated candidates: lowest validation Brier, then log loss.",
+  "default_policy": "high_precision",
+  "policies": {
+    "high_precision": {
+      "threshold": 0.8493198346514657,
+      "method": "maximum recall at validation precision >= 0.90",
+      "precision": 0.9,
+      "recall": 0.2647058823529412,
+      "precision_target_achieved": true,
+      "predicted_positives": 20
+    },
+    "balanced": {
+      "threshold": 0.42169382344542883,
+      "method": "maximum validation F1; no 90% precision constraint",
+      "precision": 0.7454545454545455,
+      "recall": 0.6029411764705882,
+      "f1": 0.6666666666666666
+    }
+  },
+  "calibration_method": "sigmoid, 3-fold CV wholly within the original training partition",
+  "evidence_scope": "Assignment-alignment extension after original test results were already inspected. Model and both thresholds use saved validation evidence only. Test results reuse the original held-out partition; this is not a new untouched test experiment.",
+  "original_file_hashes": {
+    "evaluation.json": "9e2107b84d75fad60e7530621b6994aa7cdde57b339f13ad2b9069a135824391",
+    "frozen_selection.json": "4ebfe2828ad48910cd240ceffb3c304c42c20e5504fb1eb4ddbd72ef2611f29f",
+    "split_membership.csv": "7b8632673c98d9f12a06fb13ea561ebf436a1f0fd5859e4f6c3045e2d55ded66",
+    "historical_predictions.csv": "cc6938840a90d1aca5bbaf2e75e65fc2bff40e062e7de94763902a34319756b3",
+    "selected_model.joblib": "752fe727964d1f231daac8526a9c5cb6f7691af2b4791584930e7dd608951be7",
+    "metadata.json": "563c381bec913eb7ba6f14a3c08c60f0327f9b2b0e695d0d47210e21a380689e"
+  }
+}

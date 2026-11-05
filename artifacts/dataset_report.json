@@ -1,0 +1,106 @@
+{
+  "rows": 10000,
+  "columns": [
+    "UDI",
+    "Product ID",
+    "Type",
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "Machine failure",
+    "TWF",
+    "HDF",
+    "PWF",
+    "OSF",
+    "RNF"
+  ],
+  "dtypes": {
+    "UDI": "int64",
+    "Product ID": "object",
+    "Type": "object",
+    "Air temperature [K]": "float64",
+    "Process temperature [K]": "float64",
+    "Rotational speed [rpm]": "int64",
+    "Torque [Nm]": "float64",
+    "Tool wear [min]": "int64",
+    "Machine failure": "int64",
+    "TWF": "int64",
+    "HDF": "int64",
+    "PWF": "int64",
+    "OSF": "int64",
+    "RNF": "int64"
+  },
+  "missing_cells": 0,
+  "duplicate_records": 0,
+  "duplicate_predictors": 0,
+  "duplicate_product_ids": 0,
+  "target_counts": {
+    "0": 9661,
+    "1": 339
+  },
+  "failure_rate": 0.0339,
+  "label_inconsistencies": 27,
+  "inconsistent_udis": [
+    1222,
+    1303,
+    1438,
+    1749,
+    2073,
+    2560,
+    2750,
+    3066,
+    3453,
+    4045,
+    4685,
+    5472,
+    5490,
+    5496,
+    5510,
+    5537,
+    5554,
+    5640,
+    5942,
+    6092,
+    6479,
+    6914,
+    6961,
+    7489,
+    7869,
+    8507,
+    9016
+  ],
+  "observed_ranges": {
+    "Air temperature [K]": [
+      295.3,
+      304.5
+    ],
+    "Process temperature [K]": [
+      305.7,
+      313.8
+    ],
+    "Rotational speed [rpm]": [
+      1168.0,
+      2886.0
+    ],
+    "Torque [Nm]": [
+      3.8,
+      76.6
+    ],
+    "Tool wear [min]": [
+      0.0,
+      253.0
+    ]
+  },
+  "iqr_outlier_counts": {
+    "Air temperature [K]": 0,
+    "Process temperature [K]": 0,
+    "Rotational speed [rpm]": 418,
+    "Torque [Nm]": 69,
+    "Tool wear [min]": 0
+  },
+  "outlier_policy": "Retain valid extreme conditions; they may be meaningful failure signals.",
+  "label_policy": "Retain official target labels; subtype flags are audit-only.",
+  "sha256": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e"
+}

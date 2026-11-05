@@ -1,0 +1,82 @@
+{
+  "version": "1.0.0",
+  "created_utc": "2026-11-04T14:42:41.308161+00:00",
+  "selected_model": "Random Forest",
+  "features": [
+    "Type",
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]"
+  ],
+  "target": "Machine failure",
+  "threshold": 0.51,
+  "threshold_method": "maximum recall at validation precision >= 0.90",
+  "score_kind": "uncalibrated model score",
+  "calibration_caveat": "Calibration assessed on this synthetic sample; no external guarantee.",
+  "training_ranges": {
+    "Air temperature [K]": [
+      295.3,
+      304.5
+    ],
+    "Process temperature [K]": [
+      305.7,
+      313.8
+    ],
+    "Rotational speed [rpm]": [
+      1168.0,
+      2861.0
+    ],
+    "Torque [Nm]": [
+      4.6,
+      76.2
+    ],
+    "Tool wear [min]": [
+      0.0,
+      253.0
+    ]
+  },
+  "defaults": {
+    "Air temperature [K]": 300.1,
+    "Process temperature [K]": 310.1,
+    "Rotational speed [rpm]": 1504.0,
+    "Torque [Nm]": 40.0,
+    "Tool wear [min]": 106.0
+  },
+  "seed": 42,
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scikit-learn": "1.4.2",
+    "joblib": "1.4.2",
+    "scipy": "1.12.0"
+  },
+  "dataset_sha256": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e",
+  "model_sha256": "752fe727964d1f231daac8526a9c5cb6f7691af2b4791584930e7dd608951be7",
+  "test_metrics": {
+    "accuracy": 0.9775,
+    "precision": 0.9259259259259259,
+    "recall": 0.36764705882352944,
+    "f1": 0.5263157894736842,
+    "average_precision": 0.7426274234303305,
+    "roc_auc": 0.9608414017781025,
+    "brier_score": 0.01682436875,
+    "log_loss": 0.09195908403954983,
+    "threshold": 0.51,
+    "confusion_matrix": [
+      [
+        1930,
+        2
+      ],
+      [
+        43,
+        25
+      ]
+    ],
+    "false_positives": 2,
+    "false_negatives": 43
+  },
+  "risk_categories": "Elevated: score >= validation-selected threshold; lower: below threshold."
+}
